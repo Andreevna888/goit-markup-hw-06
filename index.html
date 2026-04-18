@@ -25,7 +25,7 @@
     <header class="header-page">
       <div class="container header-container">
         <nav class="heder-navigation">
-          <a class="logo" href="./index.html">
+          <a class="logo header-logo" href="./index.html">
             <span class="colorweb">Web</span><span>Studio</span></a
           >
 
@@ -51,6 +51,11 @@
             </li>
           </ul>
         </address>
+        <button class="heroicons-solid_menu" type="button" data-menu-open>
+          <svg class="heroicons-menu" width="24" height="24">
+            <use href="./images/icons.svg#icon-solid_menu-1"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -71,7 +76,7 @@
       </section>
 
       <section class="features" id="features">
-        <div class="container container-feauters">
+        <div class="container">
           <h2 class="visually-hidden">Our Features</h2>
 
           <ul class="features-listt">
@@ -134,6 +139,7 @@
             <li class="section-img">
               <img
                 src="./images/img1.jpg"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -182,6 +188,7 @@
             <li class="section-img">
               <img
                 src="./images/img4.jpg"
+                srcset="./images/img4.jpg 1x, ./images/img2-2x.jpg 2x"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -231,6 +238,7 @@
             <li class="section-img">
               <img
                 src="./images/img3.jpg"
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -279,6 +287,7 @@
             <li class="section-img">
               <img
                 src="./images/img2.jpg"
+                srcset="./images/img2.jpg 1x, ./images/img4-2x.jpg 2x"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -331,7 +340,9 @@
             <li class="portfolio-list">
               <div class="portfolio-fotocard">
                 <img
+                  class="fotocard-img"
                   src="./images/img5.jpg"
+                  srcset="./images/img5.jpg 1x, ./images/img5-2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -351,7 +362,9 @@
             <li class="portfolio-list">
               <div class="portfolio-fotocard">
                 <img
+                  class="fotocard-img"
                   src="./images/img6.jpg"
+                  srcset="./images/img6.jpg 1x, ./images/img6-2x.jpg 2x"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -370,7 +383,9 @@
             <li class="portfolio-list">
               <div class="portfolio-fotocard">
                 <img
+                  class="fotocard-img"
                   src="./images/img7.jpg"
+                  srcset="./images/img7.jpg 1x, ./images/img7-2x.jpg 2x"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -389,7 +404,9 @@
             <li class="portfolio-list">
               <div class="portfolio-fotocard">
                 <img
+                  class="fotocard-img"
                   src="./images/img8.jpg"
+                  srcset="./images/img8.jpg 1x, ./images/img8-2x.jpg 2x"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -408,7 +425,9 @@
             <li class="portfolio-list">
               <div class="portfolio-fotocard">
                 <img
+                  class="fotocard-img"
                   src="./images/img9.jpg"
+                  srcset="./images/img9.jpg 1x, ./images/img9-2x.jpg 2x"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -427,7 +446,9 @@
             <li class="portfolio-list">
               <div class="portfolio-fotocard">
                 <img
+                  class="fotocard-img"
                   src="./images/img10.jpg"
+                  srcset="./images/img10.jpg 1x, ./images/img10-2x.jpg 2x"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -600,6 +621,64 @@
       </div>
     </div>
 
+    
+    <div class="mob-menu " data-menu>
+      <div class="container container-mob-menu">
+      <button type="button" class="mob-close-button" data-menu-close>
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav class="mob-menu-nav">
+        <ul class="mob-nav-list">
+          <li class="mob-nav-item active">
+            <a class="mob-nav-lista mob-nav-lista-color" href="">Studio</a>
+          </li>
+          <li class="mob-nav-item"><a class="mob-nav-lista" href="">Portfolio</a></li>
+          <li class="mob-nav-item"><a class="mob-nav-lista" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="mob-address-page">
+          <ul class="mob-address-list">
+            <li>
+              <a class="mob-address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li>
+              <a class="mob-address-link mob-address-color" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobil-menu-ul">
+              <li class="menu-liicons">
+                <a class="menu-media-text" href="#"
+                  ><svg class="our-team-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram2"></use></svg
+                ></a>
+              </li>
+              <li class="menu-liicons">
+                <a class="menu-media-text" href="#"
+                  ><svg class="our-team-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter1"></use></svg
+                ></a>
+              </li>
+              <li class="menu-liicons">
+                <a class="menu-media-text" href="#"
+                  ><svg class="our-team-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook1"></use></svg
+                ></a>
+              </li>
+              <li class="menu-liicons">
+                <a class="menu-media-text" href="#"
+                  ><svg class="our-team-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin1"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
