@@ -183,7 +183,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-nav-item:not(last-child) {
+.mob-nav-item:not(:last-child) {
   margin-bottom: 40px;
 }
 .mob-nav-list {
@@ -376,6 +376,7 @@ img {
   display: block;
   margin: 0 auto;
   margin-bottom: 72px;
+  max-width: 216px;
 }
 .btn {
   color: #ffffff;
@@ -634,6 +635,7 @@ img {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 24px;
+    row-gap: 64px;
   }
   .our-team-job .section-img {
     width: calc((100% - 24px) / 2);
@@ -725,25 +727,23 @@ img {
   text-align: left;
   color: #434455;
 }
+
 .portfolio-fotocard {
   position: relative;
   overflow: hidden;
-}
-.portfolio-fotocard {
-  overflow: hidden;
-  width: 288px;
+  width: 100%;
   height: 280px;
 }
 .fotocard-img {
   width: 100%;
   height: 100%;
-  object-fit: none;
+  object-fit: cover;
   object-position: top left;
 }
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 72px;
+  row-gap: 48px;
   column-gap: 24px;
 }
 @media screen and (min-width: 768px) {
@@ -764,6 +764,9 @@ img {
     overflow: hidden;
     width: 356px;
     height: 300px;
+  }
+  .portfolio-img {
+    row-gap: 72px;
   }
 }
 
@@ -811,7 +814,7 @@ img {
 .footer {
   background-color: #2e2f42;
   color: #f4f4fd;
-  padding-block: 100px;
+  padding-block: 96px;
 }
 
 .logo-footer {
@@ -982,6 +985,9 @@ img {
     column-gap: 0;
     max-width: 1158px;
   }
+  .footer {
+    padding-block: 100px;
+  }
   .footer-form {
     margin-left: auto;
   }
@@ -1041,7 +1047,9 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fcfcfc;
-  max-width: calc(100% - 32px);
+  max-width: 288px;
+  padding-left: 16px;
+  padding-right: 16px;
   width: 100%;
   min-height: 623px;
   border-radius: 4px;
@@ -1049,7 +1057,7 @@ img {
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   padding-top: 72px;
 }
 .modal-field {
@@ -1160,10 +1168,13 @@ border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   fill: transparent;
+
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1200,6 +1211,8 @@ border: 1px solid rgba(46, 47, 66, 0.4);
   .modal {
     max-width: 408px;
     min-height: 584px;
+    width: 100%;
+    padding: 72px 24px 24px 24px;
   }
 }
 
