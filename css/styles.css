@@ -455,8 +455,10 @@ img {
         url('../images/bacgraund-desktop2x.jpg');
     }
   }
+  .title-section-text {
+    margin-bottom: 48px;
+  }
 }
-
 /* features*/
 
 .features-img {
@@ -875,6 +877,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   row-gap: 72px;
+}
+.container-footer {
+  width: 100%;
+}
+
+.footer-form {
+  width: 100%;
 }
 .logo-footer,
 .footer-title {
