@@ -359,7 +359,8 @@ img {
   margin: 0 auto;
 }
 .hero-section {
-  padding: 72px 52px;
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 @media screen and (min-resolution: 2x) {
   .title-section {
