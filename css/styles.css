@@ -466,10 +466,11 @@ img {
   flex-wrap: wrap;
   gap: 72px;
 }
+.list-features {
+  width: 100%;
+}
 .features {
   padding-block: 96px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 .our-features-text {
   font-weight: 700;
@@ -965,7 +966,6 @@ img {
     max-width: 264px;
   }
   .footer .container {
-    max-width: 786px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
