@@ -633,12 +633,12 @@ img {
 .our-team-section {
   background-color: #f4f4fd;
   padding-top: 96px;
+  padding-bottom: 96px;
 }
 .our-team-job {
   display: flex;
   flex-direction: column;
   row-gap: 72px;
-  padding-bottom: 96px;
 }
 
 @media screen and (min-width: 768px) {
@@ -662,10 +662,11 @@ img {
     list-style: none;
     display: flex;
     gap: 24px;
-    padding-bottom: 120px;
   }
+
   .our-team-section {
     padding-top: 120px;
+    padding-bottom: 120px;
   }
   .our-team-job .section-img {
     width: calc((100% - 72px) / 4);
@@ -878,9 +879,6 @@ img {
   flex-wrap: wrap;
   row-gap: 72px;
 }
-.container-footer {
-  width: 100%;
-}
 
 .footer-form {
   width: 100%;
@@ -981,12 +979,15 @@ img {
     column-gap: 24px;
     row-gap: 72px;
   }
+  .container-footer {
+    width: 264px;
+  }
   .logo-footer,
   .footer-title {
     text-align: left;
   }
   .footer-media {
-    width: auto;
+    width: 208px;
   }
   .footer-form-wrap {
     column-gap: 24px;
@@ -1000,24 +1001,25 @@ img {
   .footer .container {
     display: flex;
     align-items: baseline;
-    column-gap: 0;
+    /*column-gap: 0;*/
     max-width: 1158px;
+    flex-wrap: nowrap;
   }
   .footer {
     padding-block: 100px;
   }
-  .footer-form {
-    margin-left: auto;
+  .container-footer {
+    margin-right: 120px;
   }
+  /*.footer-form {
+    margin-left: 0;
+  }*/
   .footer-form-input {
     width: 264px;
   }
   .footer-form-wrap {
     display: flex;
     column-gap: 24px;
-  }
-  .container-footer {
-    padding-right: 120px;
   }
 }
 
